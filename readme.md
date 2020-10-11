@@ -1,6 +1,6 @@
 # Personal File System Library
 
-Personal File System Library is a method of storing e-books and articles from periodicals in a manner that offers longevity, organization, and ease of access. It can also be used to store meta information for real, physical books and articles in one's possession, as well as Kindle or other proprietary-format books if not yet made available in an open format for storing directly in the Library. Additionally, works of other media may be stored, such as audiobooks and films. It is up to you what constitutes a "work." All implementation details are specified in this readme document.
+Personal File System Library is a method of storing e-books and articles from periodicals in a manner that offers longevity, organization, and ease of access. It can also be used to store meta information for real, physical books and articles in one's possession, as well as Kindle or other proprietary-format books if not yet made available in an open format for storing directly in the Library. Additionally, works of other media may be stored, such as audiobooks and films. It is up to you what constitutes a "work." All implementation details are specified in this readme document. The [official version](https://github.com/mateowatson/pfsl) is kept on GitHub.
 
 ## Overview
 
@@ -239,3 +239,7 @@ Most of the fields are self explanatory, but some need more explanation and use 
 - Provider: The website or other source the text came from, especially for PDF scans of real books and the like, such as archive.org.
 
 The reason **Title** and **Author** are required in the meta template file is because they have that special connection to the naming rules of a book folder and an author folder. While no fields are required in an actual `meta.md` file for a book, you will need these two fields most of the time, and their special meaning should be kept in mind.
+
+## Conclusion
+
+Good luck on implementing this method! Please reach out with any positive or constructive or maybe slightly negative feedback on the [issues page](https://github.com/mateowatson/pfsl/issues) or email [matt@mattwatson.org](mailto:matt@mattwatson.org).

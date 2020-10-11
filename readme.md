@@ -13,7 +13,7 @@ PFSL was created by [Matt Watson](https://www.mattwatson.org/) as a way to organ
 - It is interactive, in a sense. Imagine going to your local library or bookstore and being able not only to read a book and put it back, but also put it back with your notes, annotations, and bookmarks safely attached to it.
 - It keeps things separate. It makes heavy use of folders and folder naming conventions to organize chaotic files. Your note files may be insane and unorganized, but they will all be in the `notes` folder of the book in question.
 - It keeps things together. All of your books and book knowledge can be stored in a PFSL (given an infinite time scale). The possibilities are endless. No more tracking down random files on your computer.
-- It's good for developers. It's plain text files using [Markdown](https://daringfireball.net/projects/markdown/). A PFSL can be opened in a text editor. In VSCode you can even install an extension to read your PDFs right there in the editor, which helps with note-taking. You could even git version it if you wanted, although you would probably want to gitignore the actual PDF files and any other large media files.
+- It's good for developers. It's plain text files using [Markdown](https://daringfireball.net/projects/markdown/). A PFSL can be opened in a text editor. In VSCode you can even install an extension to read your PDFs right there in the editor, which helps with note-taking. You could even git version it if you wanted, although you would probably want to gitignore the actual PDF files and any other large media files. You could also write programs to step through the folders and do whatever you want, such as create stats reports or create HTML pages from your markdown files.
 
 ## The rules of the PFSL method
 
@@ -28,7 +28,7 @@ Enough talk. Let's get down to brass tacks. Below are the rules for creating a P
     1. be shortened as appropriate
     2. contain extra words to uniquely identify it where necessary, in which case, all extra words should be camel cased and preceded by an underscore, as in, for example, `HolyBible_The_Benziger1914` for a bible published by the Benziger Brothers publishing company in 1914.
 4. A book folder should contain at its top level only the folders specified in this document, and no files. The allowed folders are `main`, `meta`, `notes`, `bookmarks`, and `annotations`. It is required to have at least a `main` and a `meta` folder.
-5. The file(s) that comprise the book should be dumped in the book's `main` folder. No other files should be placed in `main`, only the primary text, which hopefully is only one file. However, there are times when more than one file might comprise a work, including books chunked into multiple PDFs, static websites, photos of pages, and the like. Since the actual book file(s) is in the `main` folder, it does not itself have any naming rules. However, it should be clear (to at least yourself, since it's **your** personal library, after all) how the book should be read. If the book is a real, physical book, or a Kindle or other proprietary-format book, then simply put a note in this folder indicating where to find the book. It is recommended to put this note in a file called where.md.
+5. The file(s) that comprise the book should be dumped in the book's `main` folder. No other files should be placed in `main`, only the primary text, which hopefully is only one file. However, there are times when more than one file might comprise a work, including books chunked into multiple PDFs, static websites, photos of pages, and the like. Since the actual book file (or files) is in the `main` folder, it does not itself have any naming rules. However, it should be clear (to at least yourself, since it's **your** personal library, after all) how the book should be read. If the book is a real, physical book, or a Kindle or other proprietary-format book, then simply put a note in this folder indicating where to find the book. It is recommended to put this note in a file called where.md.
 6. All meta info for the book goes in the `meta` folder. You must create at least one file there called `meta.md`. We refer to this as a "standard meta file." It is simply a series of key-value pairs, or fields, with the field name being a Markdown heading one (denoted by a hashtag) and the value being the text underneath it. The value ends at the next heading one or end of file. To create this file, copy and paste the contents of the `meta-template.md` file at the library root and fill in as many values as are necessary and appropriate.
 7. You may add additional "custom fields" to a `meta.md` file, but it is highly recommended to also add these fields to your `meta-template.md` file so that you will remember to include the field in future books where necessary. This gives you wide latitude to expand your personal library meta data tracking to fit your own needs.
 8. Although you have wide liberty to change your `meta-template.md` file as needed, it should at least contain a **Title** field and an **Author** field.
@@ -53,6 +53,8 @@ works/
     AdventuresOfHuckleberryFinn_The/
         annotations/
             huckfinn.xoj
+        bookmarks/
+            bookmarks.md
         main/
             huckfinn.pdf
         meta/
@@ -62,6 +64,8 @@ works/
     DeepWork/
         annotations/
             deep-work.xoj
+        bookmarks/
+            bookmarks.md
         main/
             deep-work.pdf
         meta/
@@ -84,6 +88,8 @@ works/
             AdventuresOfHuckleberryFinn_The/
                 annotations/
                     huckfinn.xoj
+                bookmarks/
+                    bookmarks.md
                 main/
                     huckfinn.pdf
                 meta/
@@ -94,6 +100,8 @@ works/
             DeepWork/
                 annotations/
                     deep-work.xoj
+                bookmarks/
+                    bookmarks.md
                 main/
                     deep-work.pdf
                 meta/
@@ -116,6 +124,8 @@ works/
             AdventuresOfHuckleberryFinn_The/
                 annotations/
                     huckfinn.xoj
+                bookmarks/
+                    bookmarks.md
                 main/
                     huckfinn.pdf
                 meta/
@@ -126,6 +136,8 @@ works/
             DeepWork/
                 annotations/
                     deep-work.xoj
+                bookmarks/
+                    bookmarks.md
                 main/
                     deep-work.pdf
                 meta/
@@ -153,6 +165,8 @@ works/
             AdventuresOfHuckleberryFinn_The/
                 annotations/
                     huckfinn.xoj
+                bookmarks/
+                    bookmarks.md
                 main/
                     huckfinn.pdf
                 meta/
@@ -163,6 +177,8 @@ works/
             DeepWork/
                 annotations/
                     deep-work.xoj
+                bookmarks/
+                    bookmarks.md
                 main/
                     deep-work.pdf
                 meta/

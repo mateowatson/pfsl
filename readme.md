@@ -236,7 +236,3 @@ Most of the fields are self explanatory, but some need more explanation and use 
 - Provider: The website or other source the text came from, especially for PDF scans of real books and the like, such as archive.org.
 
 The reason **Title** and **Author** are required in the meta template file is because they have that special connection to the naming rules of a book folder and an author folder. While no fields are required in an actual `meta.md` file for a book, you will need these two fields most of the time, and their special meaning should be kept in mind.
-
-## Alternative options
-
-- For any standard plain text files, such as the root level `meta-template.md` file or the `meta.md` file for a book, you may drop the md extension or use another extension of your choice.
